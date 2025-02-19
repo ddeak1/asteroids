@@ -43,7 +43,7 @@ def main():
                 if shot.collision(asteroid):
                     score += 100
                     shot.kill()
-                    asteroid.kill()
+                    asteroid.split()
         pygame.Surface.fill(screen, (0,0,0))
         for obj in drawable:
             obj.draw(screen)
